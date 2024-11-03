@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background:url('file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      background-color: hsl(225, 100%, 94%);     
+    }
+
+    nav{
+      border:2px solid white;
+      background-color:white;
+      border-radius:20px;
+      margin:150px 300px;
+    }
+
+    .image{
+      text-align: center;
+    }
+
+    .image img{
+      width:100%;
+      border-top-right-radius:20px;
+      border-top-left-radius:20px;
+    }
+
+    .order-summary{
+      text-align:center;
+      padding:0px 50px;
+    }
+
+    .annual{
+      background-color:hsl(225, 100%, 98%);
+      max-width:90%;
+      margin:10px 50px 0px 50px ;
+    } 
+    
+    .annual img{
+      width:50px;
+      padding:20px 0px 0px 30px;
+    }
+
+    .display{
+      padding-top: 10px;
+      display: inline-block;
+      vertical-align: top;
+
+    }
+
+    .display h1{
+      margin-bottom: 0%;
+      font-size:16px;
+      font-weight:bold;
+    }
+
+    .display p{
+      margin-top: 0%;
+      font-size:14px;     
+    }
+
+    .buttons{
+      text-align: center;
+    }
+     
+    p{
+      color: hsl(224, 23%, 55%);
+    }
+
+    button{
+      margin:10px 0px 10px 0px;
+      width:80%;
+      padding:10px;
+      border-radius:10px;
+      border:none;
+      text-align:center;
+      background-color: hsl(245, 75%, 52%);
+    }
+
+ 
+    /* mediaqueries of tablet screens */
+    @media(max-width:991px){
+      nav{
+        margin:150px 180px;
+      }
+    }
+
+    /* mediaqueries of mobile screens */
+    @media(max-width:767px){
+      body{
+        background:url('file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+        background-size:100%;
+      }
+
+      nav{
+      margin:150px 40px;
+    }
+
+    .order-summary{
+      padding:0px 15px;
+    }
+
+    .annual{
+      margin:10px 15px 0px 15px ;
+    } 
+
+    .annual img{
+      width:35px;
+      padding:20px 0px 0px 10px;
+    }
+
+    }
+  </style>
+</head>
+<body>
+   <nav>
+    <div class="image">
+      <img src="file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/illustration-hero.svg">
+    </div>
+
+    <div class="order-summary">
+     <h1>Order Summary</h1>
+
+     <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+    </div>
+
+    <div class="annual">
+      <img src="file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/icon-music.svg">
+
+      <div class="display">
+       <h1>Annual Plan</h1>
+      <p>$59.99/year</p>
+      </div>
+
+    <a href="#" style="float:inline-end; padding:30px 5px 0px 0px;"> Change</a>
+    </div>
+
+    <div class="buttons">
+    <button>Proceed to Payment</button><br>
+    <p>Cancel Order</p>
+    </div>
+
+  </nav>
+
+</body>
+</html>
