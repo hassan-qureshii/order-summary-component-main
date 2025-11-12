@@ -30,7 +30,6 @@ body {
   box-shadow: 0 15px 35px rgba(56, 56, 255, 0.3);
 }
 
-/* Image Section */
 .image {
   text-align: center;
 }
@@ -41,7 +40,6 @@ body {
   border-top-left-radius: 20px;
 }
 
-/* Order Summary */
 .order-summary {
   text-align: center;
   padding: 25px 0 20px;
@@ -66,7 +64,6 @@ body {
   font-size: 15px;
 }
 
-/* Plan Section */
 header {
   display: flex;
   justify-content: center;
@@ -124,7 +121,6 @@ header {
   color: hsl(245, 83%, 68%);
 }
 
-/* Buttons */
 .buttons {
   text-align: center;
   margin-top: 25px;
