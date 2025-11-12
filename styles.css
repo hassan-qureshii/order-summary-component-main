@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("pattern-background-desktop.svg") no-repeat center top;
+  background-color: hsl(225, 100%, 94%);
+  background-size: cover;
+  transition: background 0.5s ease;
+}
+
+/* Card Container */
+.card {
+  width: 38%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(56, 56, 255, 0.3);
+}
+
+/* Image Section */
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/* Order Summary */
+.order-summary {
+  text-align: center;
+  padding: 25px 0 20px;
+}
+
+.order-summary h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: hsl(223, 47%, 23%);
+  text-shadow: 0 0 6px rgba(140, 140, 255, 0.2);
+  transition: color 0.3s ease;
+}
+
+.order-summary h1:hover {
+  color: hsl(245, 75%, 52%);
+}
+
+.order-summary p {
+  color: hsl(224, 23%, 55%);
+  padding: 0 60px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+/* Plan Section */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-color {
+  width: 90%;
+  padding: 12px 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.bg-color:hover {
+  background-color: hsl(225, 100%, 96%);
+  transform: scale(1.02);
+}
+
+.color {
+  display: flex;
+  align-items: center;
+}
+
+.annual img {
+  width: 55px;
+}
+
+.display {
+  padding: 0 10px;
+}
+
+.display h3 {
+  font-size: 15px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 600;
+}
+
+.display p {
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+}
+
+.display a {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.display a:hover {
+  color: hsl(245, 83%, 68%);
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+button.proceed {
+  width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(56, 56, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+button.proceed:hover {
+  background-color: hsl(245, 83%, 68%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56, 56, 255, 0.4);
+}
+
+button.proceed i {
+  margin-right: 8px;
+}
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cancel i {
+  margin-right: 6px;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* Responsive Design */
+@media (max-width: 1240px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 806px) {
+  .card {
+    width: 60%;
+  }
+
+  .order-summary p {
+    padding: 0 40px;
+  }
+
+  .annual img {
+    width: 45px;
+  }
+}
+
+@media (max-width: 605px) {
+  .card {
+    width: 80%;
+  }
+
+  .order-summary h1 {
+    font-size: 22px;
+  }
+
+  .order-summary p {
+    font-size: 13px;
+    padding: 0 20px;
+  }
+
+  .bg-color {
+    padding: 10px 12px;
+  }
+
+  .display h3 {
+    font-size: 13px;
+  }
+
+  .display p {
+    font-size: 12px;
+  }
+
+  .annual img {
+    width: 35px;
+  }
+
+  button.proceed {
+    width: 85%;
+    font-size: 14px;
+  }
+}

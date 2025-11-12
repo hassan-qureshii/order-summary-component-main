@@ -1,157 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
+  <title>Frontend Mentor | Order Summary Card</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body{
-      background:url('file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/pattern-background-desktop.svg');
-      background-repeat: no-repeat;
-      background-color: hsl(225, 100%, 94%);     
-    }
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    nav{
-      border:2px solid white;
-      background-color:white;
-      border-radius:20px;
-      margin:150px 300px;
-    }
-
-    .image{
-      text-align: center;
-    }
-
-    .image img{
-      width:100%;
-      border-top-right-radius:20px;
-      border-top-left-radius:20px;
-    }
-
-    .order-summary{
-      text-align:center;
-      padding:0px 50px;
-    }
-
-    .annual{
-      background-color:hsl(225, 100%, 98%);
-      max-width:90%;
-      margin:10px 50px 0px 50px ;
-    } 
-    
-    .annual img{
-      width:50px;
-      padding:20px 0px 0px 30px;
-    }
-
-    .display{
-      padding-top: 10px;
-      display: inline-block;
-      vertical-align: top;
-
-    }
-
-    .display h1{
-      margin-bottom: 0%;
-      font-size:16px;
-      font-weight:bold;
-    }
-
-    .display p{
-      margin-top: 0%;
-      font-size:14px;     
-    }
-
-    .buttons{
-      text-align: center;
-    }
-     
-    p{
-      color: hsl(224, 23%, 55%);
-    }
-
-    button{
-      margin:10px 0px 10px 0px;
-      width:80%;
-      padding:10px;
-      border-radius:10px;
-      border:none;
-      text-align:center;
-      background-color: hsl(245, 75%, 52%);
-    }
-
- 
-    /* mediaqueries of tablet screens */
-    @media(max-width:991px){
-      nav{
-        margin:150px 180px;
-      }
-    }
-
-    /* mediaqueries of mobile screens */
-    @media(max-width:767px){
-      body{
-        background:url('file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/pattern-background-mobile.svg');
-        background-repeat: no-repeat;
-        background-color: hsl(225, 100%, 94%);
-        background-size:100%;
-      }
-
-      nav{
-      margin:150px 40px;
-    }
-
-    .order-summary{
-      padding:0px 15px;
-    }
-
-    .annual{
-      margin:10px 15px 0px 15px ;
-    } 
-
-    .annual img{
-      width:35px;
-      padding:20px 0px 0px 10px;
-    }
-
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-   <nav>
+  <nav class="card">
     <div class="image">
-      <img src="file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/illustration-hero.svg">
+      <img src="illustration-hero.svg" alt="illustration-hero" />
     </div>
 
     <div class="order-summary">
-     <h1>Order Summary</h1>
-
-     <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-      device anywhere you like!</p>
+      <h1>Order Summary</h1>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
     </div>
 
-    <div class="annual">
-      <img src="file:///C:/Users/Itcomplex/Desktop/FrontEnd%20Mentor%20projects%20of%20html%20&%20css/order-summary-component-main/images/icon-music.svg">
+    <header>
+      <div class="bg-color">
+        <div class="color">
+          <div class="annual">
+            <img src="icon-music.svg" alt="icon-music" />
+          </div>
 
-      <div class="display">
-       <h1>Annual Plan</h1>
-      <p>$59.99/year</p>
+          <div class="display">
+            <h3>Annual Plan</h3>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+
+        <div class="display">
+          <a href="#">Change</a>
+        </div>
       </div>
-
-    <a href="#" style="float:inline-end; padding:30px 5px 0px 0px;"> Change</a>
-    </div>
+    </header>
 
     <div class="buttons">
-    <button>Proceed to Payment</button><br>
-    <p>Cancel Order</p>
+      <button class="proceed">
+        <i class="fas fa-lock"></i> Proceed to Payment
+      </button>
+      <p class="cancel"><i class="fas fa-times-circle"></i> Cancel Order</p>
     </div>
-
   </nav>
-
 </body>
 </html>
